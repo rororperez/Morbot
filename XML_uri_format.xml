@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<!-- Rule00: Descarte de eventos considerados normales -->
+<!-- Rule11: Eventos a procesar -->
+
+<tecnologies>
+    <tecnology>
+        <name>Apache</name>
+        <rule_00><![CDATA[(.*(GET|POST|HEAD) (\/|\-|\_|\.|[a-zA-Z0-9]|\)|\(|\?|\%|)* HTTP/1.(0|1)\" ([0-9]+).*)]]></rule_00>
+        <rule_11><![CDATA[(.*(GET|POST|HEAD) \S+ \S+\" ([1-5][0-9][0-9]).*)]]></rule_11>
+    </tecnology>
+    <tecnology>
+        <name>F5</name>
+        <rule_00><![CDATA[(.*(GET|POST|HEAD) (\/|\-|\_|\.|[a-zA-Z0-9]|\)|\(|\?|\%|)*\s+\S+\s+([0-9]+|-).*)]]></rule_00>
+        <rule_11><![CDATA[(.*(GET|POST|HEAD) \S+ \S+\" (\d+|-).*)]]></rule_11>
+    </tecnology>
+    <tecnology>
+        <name>BlueCoat-px-inverso</name>
+        <rule_00><![CDATA[(.*(GET|POST|HEAD) (\/|\-|\_|\.|[a-zA-Z0-9]|\)|\(|\?|\%|)*\s+\S+\s+\S+\s+([0-9]+|-).*)]]></rule_00>
+        <rule_11><![CDATA[(.*(GET|POST|HEAD) \S+ \S+ \S+ (\d+|-).*)]]></rule_11>
+    </tecnology>
+    <tecnology>
+        <name>process-all</name>
+        <rule_00><![CDATA[(GETPOSTHEADCONNECT)]]></rule_00>
+        <rule_11><![CDATA[(.*)]]></rule_11>
+    </tecnology>
+</tecnologies>

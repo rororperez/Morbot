@@ -1,0 +1,249 @@
+<?xml version="1.0"?>
+<filters>
+    <filter>
+        <id>100000</id>
+        <rule><![CDATA[((GET|HEAD|POST)\s+\S+"Wget\/\d+(\.)?\d+\s+)]]></rule>
+        <description>Wget User agent detected</description>
+        <impact>1</impact>
+        <exception></exception>
+    </filter>
+    <filter>
+        <id>100001</id>
+        <rule><![CDATA[((GET|HEAD|POST)\s+\S+.*?Havij(\")?)]]></rule>
+        <description>Havij User agent detected</description>
+        <impact>2</impact>
+        <exception></exception>
+    </filter>
+    <filter>
+        <id>100002</id>
+        <rule><![CDATA[((GET|HEAD|POST)\s+\S+.*?Nikto)]]></rule>
+        <description>Nikto User agent detected</description>
+        <impact>2</impact>
+        <exception></exception>
+    </filter>
+    <filter>
+        <id>100003</id>
+        <rule><![CDATA[((GET|HEAD|POST)\s+\S+.*?Acunetix-Product:\s+)]]></rule>
+        <description>Acunetix scanner attack detected</description>
+        <impact>2</impact>
+        <exception></exception>
+    </filter>
+    <filter>
+        <id>100004</id>
+        <rule><![CDATA[((GET|HEAD|POST)\s+\S+.*?Acunetix-Scanning-agreement:\s+)]]></rule>
+        <description>Acunetix scanner attack detected</description>
+        <impact>2</impact>
+        <exception></exception>
+    </filter>
+    <filter>
+        <id>100005</id>
+        <rule><![CDATA[((GET|HEAD|POST)\s+\S+.*?Acunetix-User-agreement:\s+)]]></rule>
+        <description>Acunetix scanner attack detected</description>
+        <impact>2</impact>
+        <exception></exception>
+    </filter>
+    <filter>
+        <id>100006</id>
+        <rule><![CDATA[((GET|HEAD|POST)\s+\S+.*?\/w00tw00t.at.isc.sans.dfind:)]]></rule>
+        <description>Dfind scanner attack detected</description>
+        <impact>2</impact>
+        <exception></exception>
+    </filter>
+    <filter>
+        <id>100007</id>
+        <rule><![CDATA[((GET|HEAD|POST)\s+\S+.*?:(*COMMIT)[^a-z]*?Dfind)]]></rule>
+        <description>Dfind scanner attack detected</description>
+        <impact>2</impact>
+        <exception></exception>
+    </filter>
+    <filter>
+        <id>100008</id>
+        <rule><![CDATA[((GET|HEAD|POST)\s+\S+.*?\s*:[^\x0A\x0D]*Havij)]]></rule>
+        <description>Havij scanner attack detected</description>
+        <impact>2</impact>
+        <exception></exception>
+    </filter>
+    <filter>
+        <id>100009</id>
+        <rule><![CDATA[((GET|HEAD|POST)\s+\S+.*?\s*:[^\x0A\x0D]*Morfeus)]]></rule>
+        <description>Morfeus scanner attack detected</description>
+        <impact>2</impact>
+        <exception></exception>
+    </filter>
+    <filter>
+        <id>100010</id>
+        <rule><![CDATA[((GET|HEAD|POST)\s+\S+.*?:.{0,50}nessus)]]></rule>
+        <description>Nessus scanner attack detected</description>
+        <impact>2</impact>
+        <exception></exception>
+    </filter>
+    <filter>
+        <id>100011</id>
+        <rule><![CDATA[((GET|HEAD|POST)\s+\S+.*?\s*:[^\x0A\x0D]*Netsparker)]]></rule>
+        <description>Netsparker scanner attack detected</description>
+        <impact>2</impact>
+        <exception></exception>
+    </filter>
+    <filter>
+        <id>100012</id>
+        <rule><![CDATA[((GET|HEAD|POST)\s+\S+.*?:.{0,50}Nikto)]]></rule>
+        <description>Nikto scanner attack detected</description>
+        <impact>2</impact>
+        <exception></exception>
+    </filter>
+    <filter>
+        <id>100013</id>
+        <rule><![CDATA[((GET|HEAD|POST)\s+\S+.*?\s*:[^\x0A\x0D]*Nmap\sScripting\sEngine)]]></rule>
+        <description>Nmap scanner attack detected</description>
+        <impact>2</impact>
+        <exception></exception>
+    </filter>
+    <filter>
+        <id>100014</id>
+        <rule><![CDATA[((GET|HEAD|POST)\s+\S+.*?\s*:[^\x0A\x0D]*Nsauditor)]]></rule>
+        <description>Nsauditor scanner attack detected</description>
+        <impact>2</impact>
+        <exception></exception>
+    </filter>
+    <filter>
+        <id>100015</id>
+        <rule><![CDATA[((GET|HEAD|POST)\s+\S+.*?\s*:[^\x0A\x0D]*Paros)]]></rule>
+        <description>Paros scanner attack detected</description>
+        <impact>2</impact>
+        <exception></exception>
+    </filter>
+    <filter>
+        <id>100016</id>
+        <rule><![CDATA[((GET|HEAD|POST)\s+\S+.*?\s*:[^\x0A\x0D]*sqlmap)]]></rule>
+        <description>SQLmap scanner attack detected</description>
+        <impact>2</impact>
+        <exception></exception>
+    </filter>
+    <filter>
+        <id>100017</id>
+        <rule><![CDATA[((GET|HEAD|POST)\s+\S+.*?\s*:[^\x0a\x0d]{0,100}DataCha0s\/2\.0)]]></rule>
+        <description>Scanner attack detected</description>
+        <impact>2</impact>
+        <exception></exception>
+    </filter>
+    <filter>
+        <id>100018</id>
+        <rule><![CDATA[((GET|HEAD|POST)\s+\S+.*?\s*:[^\x0a\x0d]{0,100}FooBar\/42)]]></rule>
+        <description>Scanner attack detected</description>
+        <impact>2</impact>
+        <exception></exception>
+    </filter>
+    <filter>
+        <id>100019</id>
+        <rule><![CDATA[((GET|HEAD|POST)\s+\S+.*?\s*:[^\x0a\x0d]{0,100}cgichk)]]></rule>
+        <description>Scanner attack detected</description>
+        <impact>2</impact>
+        <exception></exception>
+    </filter>
+    <filter>
+        <id>100020</id>
+        <rule><![CDATA[((GET|HEAD|POST)\s+\S+.*?\s*:[^\x0A\x0D]*XSpider\s*7)]]></rule>
+        <description>XSpider scanner attack detected</description>
+        <impact>2</impact>
+        <exception></exception>
+    </filter>
+    <filter>
+        <id>100021</id>
+        <rule><![CDATA[((GET|HEAD|POST)\s+\S+.*?\s*:[^\x0A\x0D]*XSpider\s*7)]]></rule>
+        <description>XSpider scanner attack detected</description>
+        <impact>2</impact>
+        <exception></exception>
+    </filter>
+    <filter>
+        <id>100022</id>
+        <rule><![CDATA[((GET|HEAD|POST)\s+\S+.*?DigExt)]]></rule>
+        <description>DigExt scanner attack detected</description>
+        <impact>2</impact>
+        <exception></exception>
+    </filter>
+    <filter>
+        <id>100023</id>
+        <rule><![CDATA[((GET|HEAD|POST)\s+\S+.*?DTS Agent)]]></rule>
+        <description>DigExt User-Agent detected</description>
+        <impact>2</impact>
+        <exception></exception>
+    </filter>
+    <filter>
+        <id>100024</id>
+        <rule><![CDATA[((GET|HEAD|POST)\s+\S+.*?DTS Agent)]]></rule>
+        <description>DTS Agent User-Agent detected</description>
+        <impact>2</impact>
+        <exception></exception>
+    </filter>
+    <filter>
+        <id>100025</id>
+        <rule><![CDATA[((GET|HEAD|POST)\s+\S+.*?FOCA)]]></rule>
+        <description>FOCA User-Agent detected</description>
+        <impact>2</impact>
+        <exception></exception>
+    </filter>
+    <filter>
+        <id>100026</id>
+        <rule><![CDATA[((GET|HEAD|POST)\s+\S+.*?DirBuster)]]></rule>
+        <description>DirBuster User-Agent detected</description>
+        <impact>2</impact>
+        <exception></exception>
+    </filter>
+    <filter>
+        <id>100027</id>
+        <rule><![CDATA[((GET|HEAD|POST)\s+\S+.*?HTTrack)]]></rule>
+        <description>HTTrack User-Agent detected</description>
+        <impact>2</impact>
+        <exception></exception>
+    </filter>
+    <filter>
+        <id>100028</id>
+        <rule><![CDATA[((GET|HEAD|POST)\s+\S+.*?Morfeus Fucking Scanner)]]></rule>
+        <description>Morfeus Fucking Scanner User-Agent detected</description>
+        <impact>2</impact>
+        <exception></exception>
+    </filter>
+    <filter>
+        <id>100029</id>
+        <rule><![CDATA[((GET|HEAD|POST)\s+\S+.*?Nmap\s)]]></rule>
+        <description>Nmap scanner attack detected</description>
+        <impact>2</impact>
+        <exception></exception>
+    </filter>
+    <filter>
+        <id>100030</id>
+        <rule><![CDATA[((GET|HEAD|POST)\s+\S+.*?Paros)]]></rule>
+        <description>Paros scanner attack detected</description>
+        <impact>2</impact>
+        <exception></exception>
+    </filter>
+    <filter>
+        <id>100031</id>
+        <rule><![CDATA[((GET|HEAD|POST)\s+\S+.*?SiteSucker)]]></rule>
+        <description>SiteSucker scanner attack detected</description>
+        <impact>2</impact>
+        <exception></exception>
+    </filter>
+    <filter>
+        <id>100032</id>
+        <rule><![CDATA[((GET|HEAD|POST)\s+\S+.*?sputnik)]]></rule>
+        <description>Sputnik scanner attack detected</description>
+        <impact>2</impact>
+        <exception></exception>
+    </filter>
+    <filter>
+        <id>100033</id>
+        <rule><![CDATA[((GET|HEAD|POST)\s+\S+.*?WebsecurifyScanner)]]></rule>
+        <description>SWebsecurifyScanner scanner attack detected</description>
+        <impact>2</impact>
+        <exception></exception>
+    </filter>
+    <filter>
+        <id>100034</id>
+        <rule><![CDATA[((GET|HEAD|POST)\s+\S+.*?ZmEu)]]></rule>
+        <description>ZmEu scanner attack detected</description>
+        <impact>2</impact>
+        <exception></exception>
+    </filter>
+</filters>
+
